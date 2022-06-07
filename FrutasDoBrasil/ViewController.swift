@@ -9,7 +9,7 @@ import UIKit
 import RealityKit
 import ARKit
 
-class ViewController: UIViewController,ARSessionDelegate{
+class ViewController: UIViewController, ARSessionDelegate{
     
     @IBOutlet var arView: ARView!
     
@@ -20,7 +20,7 @@ class ViewController: UIViewController,ARSessionDelegate{
         
         if let imagesToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main){
             configuration.trackingImages = imagesToTrack
-            configuration.maximumNumberOfTrackedImages = 1
+            configuration.maximumNumberOfTrackedImages = 2
         }
         
         arView.session.run(configuration)
@@ -37,14 +37,23 @@ class ViewController: UIViewController,ARSessionDelegate{
                 let entity = AnchorEntity(anchor: imageAnchor)
                 
                 if let scene = try? Experience.loadBox() {
-                    if let cup = scene.findEntity(named: "Cupuacu"){
-                        entity.addChild(cup)
+                    if let cupuacu = scene.findEntity(named: "Cupuacu"){
+                        entity.addChild(cupuacu)
                         arView.scene.addAnchor(entity)
-                        
                     }
                 }
             }
             
+            if let imageName = imageAnchor.name, imageName == "MaracujaCard" {
+                let entity = AnchorEntity(anchor: imageAnchor)
+                
+                if let scene = try? Experience.loadBoxMaracuja() {
+                    if let cupuacu = scene.findEntity(named: "Maracuja"){
+                        entity.addChild(cupuacu)
+                        arView.scene.addAnchor(entity)
+                    }
+                }
+            }
         }
     }
 }

@@ -6,6 +6,9 @@
   "resources" : [
     {
       "filename" : "CupuacuCard.arreferenceimage"
+    },
+    {
+      "filename" : "MaracujaCard.arreferenceimage"
     }
   ]
 }
