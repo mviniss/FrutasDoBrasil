@@ -5,7 +5,13 @@
   },
   "resources" : [
     {
-      "filename" : "CambuciCard.arreferenceimage"
+      "filename" : "CajaCard.arreferenceimage"
+    },
+    {
+      "filename" : "CupuacuCard.arreferenceimage"
+    },
+    {
+      "filename" : "MaracujaCard.arreferenceimage"
     }
   ]
 }
