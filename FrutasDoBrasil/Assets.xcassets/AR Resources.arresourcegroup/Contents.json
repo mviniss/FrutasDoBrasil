@@ -4,6 +4,14 @@
     "version" : 1
   },
   "resources" : [
-
+    {
+      "filename" : "CajaCard.arreferenceimage"
+    },
+    {
+      "filename" : "CupuacuCard.arreferenceimage"
+    },
+    {
+      "filename" : "MaracujaCard.arreferenceimage"
+    }
   ]
 }

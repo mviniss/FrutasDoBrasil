@@ -20,7 +20,7 @@ class ViewController: UIViewController, ARSessionDelegate{
         
         if let imagesToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main){
             configuration.trackingImages = imagesToTrack
-            configuration.maximumNumberOfTrackedImages = 2
+            configuration.maximumNumberOfTrackedImages = 3
         }
         
         arView.session.run(configuration)
