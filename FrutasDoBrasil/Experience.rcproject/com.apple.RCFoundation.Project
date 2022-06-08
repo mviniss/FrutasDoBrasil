@@ -315,20 +315,20 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        1,
+                        0.034989301115274429,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.034989301115274429,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.034989301115274429,
                         0,
                         0,
-                        0,
+                        0.029999999329447746,
                         0,
                         1
                       ]
@@ -497,7 +497,60 @@
                       ]
                     }
                   },
-                  "Cube" : null
+                  "Cube" : null,
+                  "E411CF78-BA3A-4C90-BE5F-F24F2995B86F" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "standard"
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "box"
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "1BFCBFCD-5C1C-4BF7-860D-63022006554C"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.20019997656345367,
+                        0.049999989569187164,
+                        0,
+                        1
+                      ]
+                    }
+                  }
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -522,13 +575,13 @@
                   0.88777750730514526,
                   -0.46027034521102905,
                   0,
-                  0.0028989256825298071,
+                  0.0028989242855459452,
                   0.46027275919914246,
                   0.88777273893356323,
                   0,
-                  1.5295968055725098,
-                  7.6318540573120117,
-                  14.161952972412109,
+                  0.044461715966463089,
+                  0.22189228236675262,
+                  0.41135880351066589,
                   1
                 ],
                 "sceneTransform" : [
