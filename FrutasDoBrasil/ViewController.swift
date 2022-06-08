@@ -54,6 +54,17 @@ class ViewController: UIViewController, ARSessionDelegate{
                     }
                 }
             }
+            
+            if let imageName = imageAnchor.name, imageName == "CajaCard"{
+                let entity = AnchorEntity(anchor: imageAnchor)
+                
+                if let scene = try? Experience.loadBoxCaja(){
+                    if let caja = scene.findEntity(named: "Caja"){
+                        entity.addChild(caja)
+                        arView.scene.addAnchor(entity)
+                    }
+                }
+            }
         }
     }
 }
