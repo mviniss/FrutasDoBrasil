@@ -4,11 +4,6 @@
     "version" : 1
   },
   "resources" : [
-    {
-      "filename" : "CupuacuCard.arreferenceimage"
-    },
-    {
-      "filename" : "MaracujaCard.arreferenceimage"
-    }
+
   ]
 }
