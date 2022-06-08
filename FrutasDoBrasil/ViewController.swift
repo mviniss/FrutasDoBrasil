@@ -20,7 +20,7 @@ class ViewController: UIViewController, ARSessionDelegate{
         
         if let imagesToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main){
             configuration.trackingImages = imagesToTrack
-            configuration.maximumNumberOfTrackedImages = 2
+            configuration.maximumNumberOfTrackedImages = 3
         }
         
         arView.session.run(configuration)
@@ -48,8 +48,20 @@ class ViewController: UIViewController, ARSessionDelegate{
                 let entity = AnchorEntity(anchor: imageAnchor)
                 
                 if let scene = try? Experience.loadBoxMaracuja() {
-                    if let cupuacu = scene.findEntity(named: "Maracuja"){
-                        entity.addChild(cupuacu)
+                    if let maracuja = scene.findEntity(named: "Maracuja"){
+                        entity.addChild(maracuja)
+                        arView.scene.addAnchor(entity)
+                    }
+                }
+            }
+            
+            
+            if let imageName = imageAnchor.name, imageName == "CajaCard" {
+                let entity = AnchorEntity(anchor:  imageAnchor)
+                
+                if let scene = try? Experience.loadBoxCaja() {
+                    if let caja = scene.findEntity(named: "Caja"){
+                        entity.addChild(caja)
                         arView.scene.addAnchor(entity)
                     }
                 }

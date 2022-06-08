@@ -8,5 +8,10 @@
     "libraryIdentifier" : "3705791cce0b2137e9db77bc1b9fb697",
     "format" : "model",
     "displayName" : "maracuja.usdz"
+  },
+  {
+    "libraryIdentifier" : "e07c14f08dd5d2794ae5d7fb13e958ac",
+    "format" : "model",
+    "displayName" : "caja.usdz"
   }
 ]
